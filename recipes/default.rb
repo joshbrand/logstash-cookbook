@@ -19,7 +19,7 @@
 
 include_recipe "java"
 
-directory "/srv/logstash" do
+directory "#{node['logstash']['install_path']}" do
   owner "nobody"
   group "nogroup"
 end
